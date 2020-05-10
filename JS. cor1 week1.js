@@ -1,12 +1,13 @@
 
 
-function age(years) {
- return 2020 - years; 
+function getYearOfBirth(year) {
+ return 2020 - year; 
 }
 
-function person(name, age) {
+function personInfo(name, age) {
+ const getAge = getYearOfBirth(age)
     const message =
-      "My Name is " + name + " and I was born in " + age ;
+      "My Name is " + name + " and I was born in " + getAge ;
     return message;
     
   }
